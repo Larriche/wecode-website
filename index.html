@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Home | Wecode</title>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- browser css reset -->
+   <link href="css/browser_reset.css" rel="stylesheet">
+
+   <!-- site's stylesheet -->
+   <link href="css/style.css" rel="stylesheet">
+
+   <!-- bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+ </head>
+
+ <body>
+   <header class="site-header">
+        <nav class="navbar-default" id="main-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><span class="site-logo">We Code</span></a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="current-tab"><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="portfolio.html">Products</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+         </div>
+       </nav>
+	</header>
+   
+   <section class="container-fluid">
+	   <section id="content-container" class="row">
+	      <section class="col-md-offset-2 col-md-8">
+	         <section class="row">
+	           <section class="col-md-12">
+               <section id="slider">
+	                 <img id="current-pic" width="820" height="400" src=""/>
+               </section>
+
+               <img class="hidden-image" src="images/web_design.jpg"/>
+               <img class="hidden-image" src="images/web_hosting.jpg"/>
+               <img class="hidden-image" src="images/mobile_app.png"/>
+               <img class="hidden-image" src="images/desktop.jpg"/>
+	           </section>
+	         </section>
+
+	         <section class="row">
+		         <section class="col-md-12" id="company-intro">
+		           <p>
+		             We are a group of dynamic and talented web developers and software
+		             engineers based in Ghana.Our mission is to provide quality and affordable
+		             web design and hosting,web application development,mobile application
+		             development and custom desktop software development.Get in touch with us now. 
+		           </p>
+		         </section>
+	         </section>
+
+	      </section>
+	    </section>
+   </section>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+   <script>
+     function loadPic()
+     {
+          if (current > 3){
+              current = 0;
+          }
+
+          var $currPic = $('#current-pic');
+          $currPic.attr('src',$slidePics[current].src);
+
+          current += 1;
+     }
+
+     var current = 0;
+     var $slidePics = $('.hidden-image');
+     $('#current-pic').attr('src',$slidePics[current].src);
+    
+     setInterval(loadPic,3000);
+
+   </script>
+
+ </body>
+ </html>

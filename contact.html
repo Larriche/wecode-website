@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+   <title>Contact Us | Wecode</title>
+
+   <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+   <!-- browser css reset -->
+   <link href="css/browser_reset.css" rel="stylesheet">
+
+   <!-- site's stylesheet -->
+   <link href="css/style.css" rel="stylesheet">
+
+   <!-- bootstrap -->
+   <link href="css/bootstrap.min.css" rel="stylesheet">
+ </head>
+
+ <body>
+   <header class="site-header">
+        <nav class="navbar-default" id="main-nav">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainNavBar">
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                	<span class="icon-bar"></span>
+                </button>
+                <a href="#" class="navbar-brand"><span class="site-logo">We Code</span></a>
+            </div>
+
+            <!-- Menu Items -->
+            <div class="collapse navbar-collapse" id="mainNavBar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="portfolio.html">Products</a></li>
+                    <li class="current-tab"><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+         </div>
+       </nav>
+	</header>
+   
+   <section class="container-fluid">
+	   <section id="content-container" class="row">
+
+	      <section class="col-md-8 col-md-offset-1">
+	        <h3 class="form-header">Discuss your project with us</h3>
+	        <hr/>
+            <form role="form">
+              <div class="form-group">
+                <label for="name" class="label-item">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter Name" name="contact">
+              </div>
+
+              <div class="form-group">
+                <label for="email" class="label-item">Email:</label>
+                <input type="text" class="form-control" id="email" name="email" placeholder="Enter Email">
+              </div>
+
+              <div class="form-group">
+                <label for="contact" class="label-item">Contact:</label>
+                <input type="text" class="form-control" id="contact" name="contact" placeholder="Enter your contact number">
+              </div>
+
+              <div class="form-group">
+                <label for="briefing" class="label-item">Project Briefing:</label>
+                <textarea class="form-control" rows="15" name="briefing"></textarea>
+              </div>
+
+              <div class="form-group">
+                <button type="submit" class="btn btn-default" style="float: right">Submit</button>
+              </div>
+            </form>
+	      </section>
+
+	      <section class="col-md-3">
+	        <ul id="contacts">
+	          <li>Telephone: +233540792532</li>
+	          <li>Email: info@wecode.com</li>
+	          <li>Skype: wecode</li>
+	          <li>Address: Heaven's gate,Woshua Avenue,Kumasi,Ghana</li>
+            </ul>
+
+	      </section>
+	    </section>
+   </section>
+   <script src="js/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+ </body>
+ </html>

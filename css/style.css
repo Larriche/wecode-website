@@ -1,0 +1,90 @@
+#main-nav{
+	background: rgba(255,255,255,0.9);
+	border-bottom: 1px solid #B8860B;
+	width: 100%;
+	position: fixed;
+	z-index: 2;
+}
+
+#main-nav .current-tab{
+	border-right: 1px solid #B8860B;
+	border-left: 1px solid #B8860B;
+	background: #FAEBD7;
+}
+
+#main-nav a{
+	color: #D2691E;
+}
+
+#main-nav a:hover{
+	text-decoration: underline;
+}
+
+#content-container{
+	margin-top: 120px;
+}
+
+#slider{
+	width: 800;
+	height: 400;
+}
+
+#slider img{
+	border: 2px solid darkgoldenrod;
+}
+
+#company-intro{
+	margin-top: 30px;
+}
+
+.label-item{
+	font-weight: normal;
+}
+
+.row{
+	margin-bottom: 20px;
+}
+
+.form-header{
+	font-weight: normal;
+	font-size: 1.2em;
+	color: blue;
+}
+
+.profile-header{
+	font-size: 1.2em;
+	color: #B8860B;
+}
+
+p{
+	text-align: justify;
+}
+
+.products-section img{
+	border: 1px solid #808080;
+	padding: 10px;
+	width: 800px;
+	height: 500px;
+}
+
+.products-section p{
+	margin-top: 10px;
+	margin-bottom: 50px;
+}
+
+.profile img{
+	margin-top: 30px;
+	border-radius: 50%;
+}
+
+#contacts{
+	list-style: none;
+}
+
+#contacts li{
+	padding: 10px;
+}
+
+.hidden-image{
+	display: none;
+}
